@@ -1,0 +1,1642 @@
+{
+  "runs": 2,
+  "type_counts": {
+    "B429": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "E121": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "0000": {
+      "avg": 9.5,
+      "last_seen": 9
+    },
+    "B748": {
+      "avg": 59.0,
+      "last_seen": 59
+    },
+    "C210": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "PA32": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "SF34": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "PC7": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "Q4": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "F100": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "C177": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "G150": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "PAY1": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "LJ35": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "G115": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "C82R": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C501": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "EC75": {
+      "avg": 10.0,
+      "last_seen": 10
+    },
+    "SR22": {
+      "avg": 38.0,
+      "last_seen": 38
+    },
+    "A400": {
+      "avg": 11.0,
+      "last_seen": 11
+    },
+    "E75S": {
+      "avg": 73.0,
+      "last_seen": 73
+    },
+    "GLIM": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "BT36": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "B788": {
+      "avg": 145.5,
+      "last_seen": 145
+    },
+    "PA28": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "CRUZ": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "C212": {
+      "avg": 2.5,
+      "last_seen": 2
+    },
+    "BE40": {
+      "avg": 11.0,
+      "last_seen": 11
+    },
+    "AT46": {
+      "avg": 13.0,
+      "last_seen": 13
+    },
+    "BE55": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "GLF6": {
+      "avg": 23.0,
+      "last_seen": 23
+    },
+    "C25M": {
+      "avg": 15.0,
+      "last_seen": 15
+    },
+    "GLF4": {
+      "avg": 23.5,
+      "last_seen": 23
+    },
+    "R22": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "EUFI": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "COL3": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BE80": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "MD11": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "EC55": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C500": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "P180": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "AP22": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "DRON": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "A189": {
+      "avg": 3.5,
+      "last_seen": 4
+    },
+    "CRJ2": {
+      "avg": 35.5,
+      "last_seen": 36
+    },
+    "P208": {
+      "avg": 27.0,
+      "last_seen": 27
+    },
+    "A320": {
+      "avg": 1670.0,
+      "last_seen": 1664
+    },
+    "C25B": {
+      "avg": 22.0,
+      "last_seen": 22
+    },
+    "PA34": {
+      "avg": 16.0,
+      "last_seen": 16
+    },
+    "A318": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "DH8B": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "AEST": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "D228": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "S92": {
+      "avg": 31.0,
+      "last_seen": 32
+    },
+    "AT45": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "PC24": {
+      "avg": 14.0,
+      "last_seen": 14
+    },
+    "DV20": {
+      "avg": 12.5,
+      "last_seen": 13
+    },
+    "SR20": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "AT44": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "COL4": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "P06T": {
+      "avg": 9.5,
+      "last_seen": 9
+    },
+    "E110": {
+      "avg": 2.5,
+      "last_seen": 3
+    },
+    "PA38": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "LJ45": {
+      "avg": 12.0,
+      "last_seen": 12
+    },
+    "A310": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "Y12": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "WW24": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "C414": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "ULAC": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "LJ75": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "SH36": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "MD82": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "FA8X": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "B789": {
+      "avg": 366.5,
+      "last_seen": 368
+    },
+    "B39M": {
+      "avg": 70.5,
+      "last_seen": 70
+    },
+    "FA50": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "EC45": {
+      "avg": 35.5,
+      "last_seen": 36
+    },
+    "PA46": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "B736": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "C150": {
+      "avg": 14.5,
+      "last_seen": 14
+    },
+    "PA44": {
+      "avg": 11.0,
+      "last_seen": 11
+    },
+    "C182": {
+      "avg": 18.0,
+      "last_seen": 17
+    },
+    "EC35": {
+      "avg": 28.5,
+      "last_seen": 29
+    },
+    "C550": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "SW3": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B738": {
+      "avg": 1753.0,
+      "last_seen": 1751
+    },
+    "H64": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "FA10": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "C421": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "M346": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "A337": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "B105": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BE99": {
+      "avg": 11.0,
+      "last_seen": 11
+    },
+    "SH33": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BE30": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "B78X": {
+      "avg": 71.0,
+      "last_seen": 71
+    },
+    "XA42": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DHC6": {
+      "avg": 56.5,
+      "last_seen": 57
+    },
+    "A109": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "TAMP": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "SHIP": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BALL": {
+      "avg": 1.5,
+      "last_seen": 2
+    },
+    "GA5C": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "GALX": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "PA25": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "SU95": {
+      "avg": 25.0,
+      "last_seen": 25
+    },
+    "R66": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "B06": {
+      "avg": 21.0,
+      "last_seen": 21
+    },
+    "AS65": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "TBM8": {
+      "avg": 2.5,
+      "last_seen": 2
+    },
+    "B412": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "AC90": {
+      "avg": 3.5,
+      "last_seen": 4
+    },
+    "C919": {
+      "avg": 18.0,
+      "last_seen": 18
+    },
+    "T206": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "SLG4": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "AS55": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "P8": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "BK17": {
+      "avg": 1,
+      "last_seen": 1
+    },
+    "A139": {
+      "avg": 54.0,
+      "last_seen": 52
+    },
+    "BE35": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "B752": {
+      "avg": 73.5,
+      "last_seen": 72
+    },
+    "A169": {
+      "avg": 4.0,
+      "last_seen": 5
+    },
+    "C404": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "F2TH": {
+      "avg": 22.0,
+      "last_seen": 22
+    },
+    "PA27": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "A339": {
+      "avg": 79.5,
+      "last_seen": 80
+    },
+    "P28A": {
+      "avg": 179.5,
+      "last_seen": 182
+    },
+    "EN48": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "A319": {
+      "avg": 306.0,
+      "last_seen": 305
+    },
+    "C130": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "E545": {
+      "avg": 12.5,
+      "last_seen": 12
+    },
+    "G2CA": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "F8L": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "PIAT": {
+      "avg": 4.5,
+      "last_seen": 5
+    },
+    "BLCF": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "GB1": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "F70": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "W3": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DH3T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "H60": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "B744": {
+      "avg": 108.0,
+      "last_seen": 108
+    },
+    "SIRA": {
+      "avg": 11.0,
+      "last_seen": 11
+    },
+    "BE20": {
+      "avg": 64.5,
+      "last_seen": 64
+    },
+    "CRJ1": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "AT8T": {
+      "avg": 5.5,
+      "last_seen": 5
+    },
+    "F900": {
+      "avg": 12.0,
+      "last_seen": 12
+    },
+    "YK42": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DH8A": {
+      "avg": 13.5,
+      "last_seen": 14
+    },
+    "G280": {
+      "avg": 17.5,
+      "last_seen": 18
+    },
+    "C295": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "E170": {
+      "avg": 37.0,
+      "last_seen": 37
+    },
+    "L410": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "UL45": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "AN32": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "H25C": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "A210": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C180": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C56X": {
+      "avg": 33.0,
+      "last_seen": 33
+    },
+    "FA20": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "BE9T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BE10": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "GLID": {
+      "avg": 16.0,
+      "last_seen": 16
+    },
+    "C17": {
+      "avg": 15.0,
+      "last_seen": 15
+    },
+    "B742": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "A19N": {
+      "avg": 14.0,
+      "last_seen": 14
+    },
+    "B764": {
+      "avg": 15.5,
+      "last_seen": 16
+    },
+    "C750": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "E35L": {
+      "avg": 16.5,
+      "last_seen": 16
+    },
+    "HAWK": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C30J": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "AP32": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "DUOD": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "BE4W": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C82S": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C72R": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "C55B": {
+      "avg": 4.5,
+      "last_seen": 5
+    },
+    "COLT": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B77L": {
+      "avg": 243.5,
+      "last_seen": 244
+    },
+    "RV8": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C208": {
+      "avg": 114.0,
+      "last_seen": 115
+    },
+    "TRIN": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "A306": {
+      "avg": 29.5,
+      "last_seen": 29
+    },
+    "PIVI": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "TWEN": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "JS32": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "F406": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "PAT4": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "SD4": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "B190": {
+      "avg": 32.5,
+      "last_seen": 32
+    },
+    "S58T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BN2P": {
+      "avg": 12.5,
+      "last_seen": 12
+    },
+    "A748": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "C408": {
+      "avg": 4.5,
+      "last_seen": 4
+    },
+    "Z42": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "T204": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "PC6T": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "PA22": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "IL76": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "CRJX": {
+      "avg": 18.0,
+      "last_seen": 18
+    },
+    "WILT": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "E290": {
+      "avg": 9.5,
+      "last_seen": 10
+    },
+    "DA62": {
+      "avg": 14.5,
+      "last_seen": 15
+    },
+    "E55P": {
+      "avg": 55.5,
+      "last_seen": 54
+    },
+    "C340": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "SB20": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "E195": {
+      "avg": 58.0,
+      "last_seen": 58
+    },
+    "T210": {
+      "avg": 3.5,
+      "last_seen": 3
+    },
+    "GLF5": {
+      "avg": 26.0,
+      "last_seen": 26
+    },
+    "ARCP": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "FOX": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "TB20": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "RV12": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "P28B": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "C68A": {
+      "avg": 47.0,
+      "last_seen": 48
+    },
+    "C560": {
+      "avg": 12.5,
+      "last_seen": 13
+    },
+    "GRNS": {
+      "avg": 1,
+      "last_seen": 1
+    },
+    "C152": {
+      "avg": 22.0,
+      "last_seen": 22
+    },
+    "RV9": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "EC30": {
+      "avg": 11.5,
+      "last_seen": 12
+    },
+    "ASTO": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "RJ85": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "BR23": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "B350": {
+      "avg": 36.0,
+      "last_seen": 36
+    },
+    "ECHO": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "HDJT": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "TEST": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "RV10": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "AT75": {
+      "avg": 36.0,
+      "last_seen": 36
+    },
+    "AAT3": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "P28R": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "B735": {
+      "avg": 11.5,
+      "last_seen": 12
+    },
+    "C42": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "B38M": {
+      "avg": 834.0,
+      "last_seen": 834
+    },
+    "B773": {
+      "avg": 13.5,
+      "last_seen": 14
+    },
+    "CN35": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "EPIC": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DA42": {
+      "avg": 30.5,
+      "last_seen": 32
+    },
+    "BE65": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "AJ27": {
+      "avg": 57.0,
+      "last_seen": 57
+    },
+    "AC50": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "RJ1H": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "C172": {
+      "avg": 324.5,
+      "last_seen": 327
+    },
+    "SF25": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C441": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "M600": {
+      "avg": 7.5,
+      "last_seen": 7
+    },
+    "CL30": {
+      "avg": 12.0,
+      "last_seen": 12
+    },
+    "CVLT": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "TUCR": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DHC2": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B732": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "DA50": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BE36": {
+      "avg": 8.5,
+      "last_seen": 8
+    },
+    "B58T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "PA31": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "AT43": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "PUMA": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "A346": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "ASTR": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "A359": {
+      "avg": 313.0,
+      "last_seen": 313
+    },
+    "T154": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "E390": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C27J": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "DH8D": {
+      "avg": 57.0,
+      "last_seen": 57
+    },
+    "TBM9": {
+      "avg": 15.0,
+      "last_seen": 15
+    },
+    "AT76": {
+      "avg": 144.0,
+      "last_seen": 145
+    },
+    "C680": {
+      "avg": 12.0,
+      "last_seen": 12
+    },
+    "M28": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "AT72": {
+      "avg": 2.5,
+      "last_seen": 2
+    },
+    "P28S": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "GL5T": {
+      "avg": 17.5,
+      "last_seen": 17
+    },
+    "R300": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DC3T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "A332": {
+      "avg": 155.0,
+      "last_seen": 155
+    },
+    "C207": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "E314": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "EH10": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "B737": {
+      "avg": 166.0,
+      "last_seen": 167
+    },
+    "A343": {
+      "avg": 7.5,
+      "last_seen": 7
+    },
+    "GA7C": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "CP10": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BCS1": {
+      "avg": 35.5,
+      "last_seen": 36
+    },
+    "FA6X": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "A20N": {
+      "avg": 996.0,
+      "last_seen": 996
+    },
+    "B733": {
+      "avg": 16.0,
+      "last_seen": 16
+    },
+    "G12T": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "S76": {
+      "avg": 8.5,
+      "last_seen": 8
+    },
+    "PC9": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "BCS3": {
+      "avg": 168.5,
+      "last_seen": 169
+    },
+    "LYNX": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "P28U": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "AT5T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "TUCA": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "SF50": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "GLEX": {
+      "avg": 44.5,
+      "last_seen": 44
+    },
+    "GL7T": {
+      "avg": 18.5,
+      "last_seen": 18
+    },
+    "AN26": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "M20T": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B734": {
+      "avg": 38.5,
+      "last_seen": 39
+    },
+    "P210": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B763": {
+      "avg": 251.5,
+      "last_seen": 249
+    },
+    "GLST": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "AS32": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "D328": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "VFHC": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "K100": {
+      "avg": 2.0,
+      "last_seen": 1
+    },
+    "LJ31": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B772": {
+      "avg": 106.5,
+      "last_seen": 107
+    },
+    "DH8C": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "A119": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "R44": {
+      "avg": 25.0,
+      "last_seen": 25
+    },
+    "C650": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "LJ70": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "B462": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "ACAM": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "DR40": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "C525": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "L39": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "CRJ7": {
+      "avg": 62.5,
+      "last_seen": 63
+    },
+    "GRND": {
+      "avg": 587.0,
+      "last_seen": 587
+    },
+    "SLG2": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "E75L": {
+      "avg": 134.5,
+      "last_seen": 133
+    },
+    "E190": {
+      "avg": 132.0,
+      "last_seen": 131
+    },
+    "DA40": {
+      "avg": 42.5,
+      "last_seen": 42
+    },
+    "SW4": {
+      "avg": 10.0,
+      "last_seen": 10
+    },
+    "C700": {
+      "avg": 9.5,
+      "last_seen": 9
+    },
+    "B407": {
+      "avg": 13.0,
+      "last_seen": 14
+    },
+    "C25A": {
+      "avg": 13.5,
+      "last_seen": 14
+    },
+    "BE58": {
+      "avg": 13.0,
+      "last_seen": 13
+    },
+    "S22T": {
+      "avg": 19.0,
+      "last_seen": 18
+    },
+    "MD88": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "B505": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "P212": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "B762": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "A388": {
+      "avg": 87.5,
+      "last_seen": 87
+    },
+    "CL60": {
+      "avg": 37.5,
+      "last_seen": 38
+    },
+    "PAY3": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "CRJ9": {
+      "avg": 160.0,
+      "last_seen": 159
+    },
+    "E120": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "GA8": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "BE9L": {
+      "avg": 33.0,
+      "last_seen": 31
+    },
+    "P68": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "TBM7": {
+      "avg": 5.5,
+      "last_seen": 5
+    },
+    "B463": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "H500": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "NH90": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C25C": {
+      "avg": 11.0,
+      "last_seen": 11
+    },
+    "E550": {
+      "avg": 22.5,
+      "last_seen": 23
+    },
+    "A21N": {
+      "avg": 925.0,
+      "last_seen": 925
+    },
+    "E295": {
+      "avg": 52.0,
+      "last_seen": 51
+    },
+    "BE33": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "E135": {
+      "avg": 19.0,
+      "last_seen": 19
+    },
+    "H25B": {
+      "avg": 23.5,
+      "last_seen": 23
+    },
+    "P32R": {
+      "avg": 3.5,
+      "last_seen": 4
+    },
+    "NG5": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "E50P": {
+      "avg": 17.0,
+      "last_seen": 17
+    },
+    "FA7X": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "MI8": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "H47": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "LJ40": {
+      "avg": 4.0,
+      "last_seen": 4
+    },
+    "SC7": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "K35R": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "RV14": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "PA30": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "LNP4": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "MD83": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "EVSS": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "B712": {
+      "avg": 29.0,
+      "last_seen": 29
+    },
+    "MU2": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "AS50": {
+      "avg": 41.5,
+      "last_seen": 40
+    },
+    "C510": {
+      "avg": 4.5,
+      "last_seen": 4
+    },
+    "M700": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "E3TF": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "B739": {
+      "avg": 125.5,
+      "last_seen": 125
+    },
+    "PC12": {
+      "avg": 101.0,
+      "last_seen": 102
+    },
+    "EA50": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "PC21": {
+      "avg": 32.0,
+      "last_seen": 32
+    },
+    "MM24": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C402": {
+      "avg": 14.0,
+      "last_seen": 14
+    },
+    "E145": {
+      "avg": 38.0,
+      "last_seen": 37
+    },
+    "A333": {
+      "avg": 298.0,
+      "last_seen": 296
+    },
+    "MC01": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "C5M": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "B77W": {
+      "avg": 421.5,
+      "last_seen": 421
+    },
+    "EC20": {
+      "avg": 14.0,
+      "last_seen": 14
+    },
+    "RV4": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "HR20": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "A35K": {
+      "avg": 69.0,
+      "last_seen": 69
+    },
+    "PA18": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "PAY2": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "F50": {
+      "avg": 1,
+      "last_seen": 1
+    },
+    "M20P": {
+      "avg": 6.5,
+      "last_seen": 7
+    },
+    "C206": {
+      "avg": 12.0,
+      "last_seen": 12
+    },
+    "C425": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "CL35": {
+      "avg": 37.0,
+      "last_seen": 37
+    },
+    "P46T": {
+      "avg": 9.0,
+      "last_seen": 9
+    },
+    "B753": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "PRM1": {
+      "avg": 5.0,
+      "last_seen": 5
+    },
+    "TEX2": {
+      "avg": 14.0,
+      "last_seen": 14
+    },
+    "IL96": {
+      "avg": 1,
+      "last_seen": 1
+    },
+    "C310": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "WT9": {
+      "avg": 3.0,
+      "last_seen": 3
+    },
+    "AA5": {
+      "avg": 2.0,
+      "last_seen": 2
+    },
+    "A321": {
+      "avg": 739.5,
+      "last_seen": 740
+    },
+    "LJ60": {
+      "avg": 8.0,
+      "last_seen": 8
+    },
+    "E45X": {
+      "avg": 6.0,
+      "last_seen": 6
+    },
+    "GA6C": {
+      "avg": 7.0,
+      "last_seen": 7
+    },
+    "E6": {
+      "avg": 1.0,
+      "last_seen": 1
+    },
+    "CLON": {
+      "avg": 0.5,
+      "last_seen": 0
+    },
+    "FDCT": {
+      "avg": 0.5,
+      "last_seen": 0
+    }
+  },
+  "last_updated": "2026-02-11T12:50:32.912834+00:00"
+}
