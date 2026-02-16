@@ -1,4 +1,3 @@
-# skycards[README.md](https://github.com/user-attachments/files/25266292/README.md)
 # Skycards Rare Plane Finder
 
 Find rare aircraft flying right now using real [Skycards](https://apps.apple.com/app/skycards/id6504375854) rarity data and live [FlightRadar24](https://www.flightradar24.com/) flights.
