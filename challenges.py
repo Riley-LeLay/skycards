@@ -19,6 +19,7 @@ from skycards_api import get_models
 class ChallengeType(Enum):
     MANUFACTURER = "manufacturer"
     AIRPORT = "airport"
+    AIRPORT_PAIR = "airport_pair"  # from X to Y (or back)
     ROUTE = "route"
     AIRCRAFT_TYPE = "aircraft_type"
     RARITY_TIER = "rarity_tier"
@@ -35,6 +36,8 @@ class ChallengeFilter:
     # Only the relevant fields are populated per challenge type
     typecodes: Optional[Set[str]] = None
     airport_icao: Optional[Set[str]] = None
+    origin_codes: Optional[Set[str]] = None  # for AIRPORT_PAIR: side A codes
+    destination_codes: Optional[Set[str]] = None  # for AIRPORT_PAIR: side B codes
     route_name: Optional[str] = None
     tier: Optional[str] = None
     min_lat: Optional[float] = None  # for latitude-based filters
@@ -160,6 +163,48 @@ IATA_TO_ICAO: Dict[str, str] = {
     "YYZ": "CYYZ", "YVR": "CYVR", "ANC": "PANC", "HNL": "PHNL",
     "TPE": "RCTP", "MNL": "RPLL", "KIX": "RJBB",
 }
+
+# City name -> list of ICAO codes for multi-airport cities.
+# Used by AIRPORT_PAIR challenges so "from London to New York" covers all airports.
+CITY_AIRPORTS: Dict[str, List[str]] = {
+    "london": ["EGLL", "EGKK", "EGSS", "EGGW", "EGLC"],
+    "new york": ["KJFK", "KEWR", "KLGA"],
+    "tokyo": ["RJAA", "RJTT"],
+    "paris": ["LFPG", "LFPO"],
+    "rome": ["LIRF", "LIRA"],
+    "milan": ["LIMC", "LIME"],
+    "moscow": ["UUEE", "UUDD", "UUWW"],
+    "seoul": ["RKSI", "RKSS"],
+    "shanghai": ["ZSPD", "ZSSS"],
+    "buenos aires": ["SAEZ", "SABE"],
+    "sao paulo": ["SBGR", "SBSP"],
+    "washington": ["KIAD", "KDCA", "KBWI"],
+    "los angeles": ["KLAX", "KBUR", "KLGB", "KSNA"],
+    "chicago": ["KORD", "KMDW"],
+    "dallas": ["KDFW", "KDAL"],
+    "houston": ["KIAH", "KHOU"],
+    "san francisco": ["KSFO", "KOAK", "KSJC"],
+    "miami": ["KMIA", "KFLL"],
+    "bangkok": ["VTBS", "VTBD"],
+    "istanbul": ["LTFM", "LTFJ"],
+    "sydney": ["YSSY"],
+    "melbourne": ["YMML"],
+    "auckland": ["NZAA"],
+    "dubai": ["OMDB", "OMDW"],
+}
+
+# Also populate IATA_TO_ICAO for the secondary airports we just added
+_EXTRA_IATA: Dict[str, str] = {
+    "LGW": "EGKK", "STN": "EGSS", "LTN": "EGGW", "LCY": "EGLC",
+    "ORY": "LFPO", "CIA": "LIRA", "MXP": "LIMC", "BGY": "LIME",
+    "DME": "UUDD", "VKO": "UUWW", "GMP": "RKSS", "SHA": "ZSSS",
+    "AEP": "SABE", "CGH": "SBSP", "IAD": "KIAD", "DCA": "KDCA",
+    "BWI": "KBWI", "BUR": "KBUR", "LGB": "KLGB", "SNA": "KSNA",
+    "MDW": "KMDW", "DAL": "KDAL", "IAH": "KIAH", "HOU": "KHOU",
+    "OAK": "KOAK", "SJC": "KSJC", "FLL": "KFLL", "DMK": "VTBD",
+    "SAW": "LTFJ", "DWC": "OMDW",
+}
+IATA_TO_ICAO.update(_EXTRA_IATA)
 
 
 # ---------------------------------------------------------------------------
@@ -408,6 +453,35 @@ def _resolve_airport(name: str) -> Optional[str]:
     return _fuzzy_match_airport(name)
 
 
+def _resolve_city_airports(name: str) -> Set[str]:
+    """Resolve a city/airport name to all matching ICAO + IATA codes.
+
+    For multi-airport cities (e.g. "London" → LHR, LGW, STN, LTN, LCY),
+    returns all airports. Falls back to single-airport resolution.
+    """
+    icao_to_iata = {v: k for k, v in IATA_TO_ICAO.items()}
+    codes: Set[str] = set()
+
+    # Check CITY_AIRPORTS first for multi-airport coverage
+    city_key = name.strip().lower()
+    if city_key in CITY_AIRPORTS:
+        for icao in CITY_AIRPORTS[city_key]:
+            codes.add(icao)
+            iata = icao_to_iata.get(icao)
+            if iata:
+                codes.add(iata)
+        return codes
+
+    # Fall back to single-airport resolution
+    icao = _resolve_airport(name)
+    if icao:
+        codes.add(icao)
+        iata = icao_to_iata.get(icao)
+        if iata:
+            codes.add(iata)
+    return codes
+
+
 def _clean_challenge_text(text: str) -> str:
     """Strip common prefixes/suffixes from challenge text."""
     text = text.strip()
@@ -480,21 +554,15 @@ def parse_challenge(text: str, models_data: dict) -> ChallengeFilter:
     if from_to_match:
         city_a = from_to_match.group(1).strip()
         city_b = from_to_match.group(2).strip()
-        icao_codes: Set[str] = set()
-        resolved_names = []
-        for name in [city_a, city_b]:
-            code = _resolve_airport(name)
-            if code:
-                icao_codes.add(code)
-                resolved_names.append(f"{name} ({code})")
-            else:
-                resolved_names.append(f"{name} (unresolved)")
-        if icao_codes:
+        codes_a = _resolve_city_airports(city_a)
+        codes_b = _resolve_city_airports(city_b)
+        if codes_a and codes_b:
             return ChallengeFilter(
-                challenge_type=ChallengeType.AIRPORT,
+                challenge_type=ChallengeType.AIRPORT_PAIR,
                 original_text=original,
-                description=f"Flights between {' and '.join(resolved_names)}",
-                airport_icao=icao_codes,
+                description=f"Flights from {city_a} to {city_b} or back",
+                origin_codes=codes_a,
+                destination_codes=codes_b,
             )
 
     # --- Airport-based ---
@@ -574,6 +642,39 @@ def parse_challenge(text: str, models_data: dict) -> ChallengeFilter:
             description=f"{class_name.title()} aircraft ({len(codes)} types)",
             typecodes=codes,
         )
+
+    # --- Compound "X or Y" for aircraft types ---
+    # e.g. "Pilatus PC-12 or PC-24" -> parse each variant separately, merge codes
+    or_match = re.search(r"\s+or\s+", cleaned, re.IGNORECASE)
+    if or_match and not re.search(r"\bback\b", cleaned, re.IGNORECASE):
+        # Split on " or " and try to parse each part
+        parts = re.split(r"\s+or\s+", cleaned, flags=re.IGNORECASE)
+        # For patterns like "Pilatus PC-12 or PC-24", the second part may lack
+        # the manufacturer prefix; try to infer it from the first part
+        merged_codes: Set[str] = set()
+        descriptions = []
+        for i, part in enumerate(parts):
+            part = part.strip()
+            if not part:
+                continue
+            # If this isn't the first part and it looks like a bare model (no spaces
+            # or starts with a letter+digit like "PC-24"), prepend the manufacturer
+            # from the first part
+            if i > 0 and " " not in part:
+                first_words = parts[0].strip().split()
+                if len(first_words) > 1:
+                    part = first_words[0] + " " + part
+            sub = parse_challenge("Catch a " + part, models_data)
+            if sub.typecodes:
+                merged_codes.update(sub.typecodes)
+                descriptions.append(sub.description)
+        if merged_codes:
+            return ChallengeFilter(
+                challenge_type=ChallengeType.AIRCRAFT_TYPE,
+                original_text=original,
+                description=" + ".join(descriptions),
+                typecodes=merged_codes,
+            )
 
     # --- Manufacturer-based ---
     mfr_index = _build_manufacturer_index(rows)
@@ -700,9 +801,26 @@ def filter_flights_for_challenge(
     if ct == ChallengeType.AIRPORT:
         if not challenge.airport_icao:
             return flights_df.head(0)
-        codes = challenge.airport_icao
+        # FR24 data uses IATA codes (e.g. "SYD"), but challenge resolution
+        # produces ICAO codes (e.g. "YSSY"). Include both formats for matching.
+        icao_to_iata = {v: k for k, v in IATA_TO_ICAO.items()}
+        codes = set(challenge.airport_icao)
+        for icao in challenge.airport_icao:
+            iata = icao_to_iata.get(icao)
+            if iata:
+                codes.add(iata)
         return flights_df.filter(
             pl.col("origin").is_in(codes) | pl.col("destination").is_in(codes)
+        )
+
+    if ct == ChallengeType.AIRPORT_PAIR:
+        if not challenge.origin_codes or not challenge.destination_codes:
+            return flights_df.head(0)
+        a = challenge.origin_codes
+        b = challenge.destination_codes
+        return flights_df.filter(
+            (pl.col("origin").is_in(a) & pl.col("destination").is_in(b))
+            | (pl.col("origin").is_in(b) & pl.col("destination").is_in(a))
         )
 
     if ct == ChallengeType.ROUTE:
